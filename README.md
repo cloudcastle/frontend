@@ -1,4 +1,20 @@
-# frontend
-Cloudcastle frontend styleguide
+# Cloud Castle Frontend
 
-[Stylesheets guide](Stylesheets.md)
+### Организация CSS
+* Не использовать каскад глубже 2-уровней вложенности;
+* Не привязываться к тегам, предпочтительно использовать классы в css (исключения: таблицы);
+* Не писать префиксы в css, использовать [autoprefixer](https://github.com/postcss/autoprefixer);
+* Для анимации положения на странице [использовать transform: translate](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/), вместо margin/left/top;
+* Разделять css/js селекторы;
+
+### Графика
+* Все иконки для ретины (желательно — svg, растровые картинки в 2 раза больше);
+* Иконки должны быть заинлайнены в css, чтобы минимизировать количество запросов к серверу;
+
+### HTML
+* Не делать ссылок с `href=“javascript: void”`, `href="#"` и т.д.
+* Добавлять `tabindex="0"` для кастомных элементов форм;
+
+### Юзабилити
+* Всегда добавлять `:focus` и `:active` стили для ссылок, кнопок и элементов форм;
+* Верстать кастомные radio/checkbox элементы на основе реальных элементов `<input>`;
