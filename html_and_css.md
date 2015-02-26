@@ -13,9 +13,10 @@
 * All icons should be inlined in css, using `url(data:...)` in order to requce count of requests to server;
 
 ### HTML
-* Do not use links with `href=“javascript: void”`, `href="#"` и т.д.
+* Do not use links with `href=“javascript: void”`, `href="#"`, etc.
 * Add `tabindex="0"` for all custom form elements;
-* Add `download` attribute to all download links, like `<a href="source" download="report.pdf">`
+* Add `download` attribute to all download links, like `<a href="source" download="report.pdf">`;
+* Add `title` attribute to links and buttons w/o text description and to clipping labels & one-liners (e.g. when user name clips due to width restrictions);
 
 ### Usability
 * Always add `:focus` and `:active` states for links, buttons and form elements;
